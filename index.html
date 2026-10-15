@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ridzuan Yahya</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">Ridzuan Yahya</div>
+        
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img 
+                src="./assets/profile-pic.png" alt="Profile picture"
+            />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Ridzuan Yahya</h1>
+            <p class="section__text__p2">Software Developer
+            </p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onClick="window.open('./assets/resume-example.pdf')">Download Resume</button>
+                <button class="btn btn-color-2" onClick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" alt="linkedin profile" class="icon" onClick="location.href='https://www.linkedin.com/'"
+                />
+                <img 
+                    src="./assets/github.png" alt="github profile" class="icon" onClick="location.href='https://www.github.com/RidzuanYahya96'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/about-pic.png" 
+                    alt="About picture" 
+                    class="about-pic"
+                />
+            </div>
+            
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience icon" 
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Software Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Education icon" 
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Diploma of Computer Science <br />Bachelor of Information Technology (Hons.) Intelligent Systems Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Detail-oriented and self-driven programmer transitioning back into the tech industry, with a solid foundation in software development, data analysis, and problem-solving. Committed to continuous learning, independently acquiring new technical skills, adapting to different environments, and overcoming challenges. Possesses strong analytical thinking, attention to detail, reliability, and the ability to work independently or collaboratively. Seeking an entry-level software development opportunity to apply existing skills, contribute to meaningful projects, gain industry experience, and grow professionally.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onClick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Swift</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>AWS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-heading">
+            <p class="section__text__p1">Career journey</p>
+            <h2 class="experience-sub-title">Employment History</h2>
+        </div>
+        <div class="timeline" aria-label="Employment history timeline">
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Nov 2024 – Nov 2025</span>
+                    <h3>CelcomDigi New Site Acquisition Project</h3>
+                    <p class="timeline-company">Naluri Rasa Sdn Bhd · Sub-Contractor</p>
+                    <p>Conducted GPS-based tower site identification, drone surveys, transmission path assessments, landowner coordination, and Technical Site Survey Reports across the Klang Valley.</p>
+                </div>
+            </article>
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Jan 2024 – Aug 2025</span>
+                    <h3>CelcomDigi 4G Network Decommissioning Project</h3>
+                    <p class="timeline-company">Solusi Jaya Sdn Bhd · Sub-Contractor</p>
+                    <p>Coordinated access, permits, logistics, safety checks, equipment verification, handovers, and final site inspections across the Central region.</p>
+                </div>
+            </article>
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Jan 2023 – Jan 2024</span>
+                    <h3>Remote Acceptance Engineer</h3>
+                    <p class="timeline-company">Ericsson Malaysia Sdn Bhd · Contract</p>
+                    <p>Provided remote technical support and validation for DNB 5G transmission links and RAN site acceptance, with daily and weekly progress reporting.</p>
+                </div>
+            </article>
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Apr 2022 – Dec 2022</span>
+                    <h3>DNB 5G Network Project</h3>
+                    <p class="timeline-company">Ziif Technic Sdn Bhd · Sub-Contractor</p>
+                    <p>Coordinated installations across the Central Region and completed handover of 21 sites, managing permits, logistics, testing, and safety compliance.</p>
+                </div>
+            </article>
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Sep 2020 – Sep 2024</span>
+                    <h3>TNB Smart Meter Installation Project</h3>
+                    <p class="timeline-company">Naluri Rasa Sdn Bhd · Sub-Contractor</p>
+                    <p>Supported more than 75,000 smart meter replacements across the Klang Valley, including inventory, handovers, compliance documentation, and reporting.</p>
+                </div>
+            </article>
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Jul 2019 – Jul 2020</span>
+                    <h3>Junior Software Developer</h3>
+                    <p class="timeline-company">Compurex Corporation (M) Sdn Bhd · Full Time</p>
+                    <p>Developed and maintained iOS, Android, and web applications using Swift, React Native, REST APIs, and JSON, including attendance, leave, inventory, and analytics features.</p>
+                </div>
+            </article>
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Feb 2019 – Jul 2019</span>
+                    <h3>IT Intern</h3>
+                    <p class="timeline-company">Compurex Corporation (M) Sdn Bhd</p>
+                    <p>Developed iOS and web systems, improved inventory and leave workflows, tested biometric tablets, and provided general IT support.</p>
+                </div>
+            </article>
+            <article class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-card">
+                    <span class="timeline-date">Apr 2016 – Jun 2016</span>
+                    <h3>Internship Trainee</h3>
+                    <p class="timeline-company">Bagan Datuk Community College</p>
+                    <p>Configured networks and Wi-Fi access points, troubleshot hardware and software, maintained routers and switches, and created recruitment media.</p>
+                </div>
+            </article>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow" 
+            onClick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project-1.png"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project One</h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com'">Github
+                            </button>
+                            <button
+                                class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com'">Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project-2.png"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project Two</h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com'">Github
+                            </button>
+                            <button
+                                class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com'">Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="./assets/project-3.png"
+                                alt="Project 1"
+                                class="project-img"
+                            />
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project Three</h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com'">Github
+                            </button>
+                            <button
+                                class="btn btn-color-1 project-btn"
+                                onclick="location.href='https://github.com'">Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img 
+                src="./assets/arrow.png" 
+                alt="Arrow icon" 
+                class="icon arrow" 
+                onClick="location.href='./#contact'"
+            />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-layout">
+            <div class="contact-intro">
+                <span class="contact-kicker">Let’s build something useful</span>
+                <h2>Have a project, opportunity, or idea?</h2>
+                <p>I’m open to software development roles, technical collaborations, and conversations about building thoughtful digital products.</p>
+                <div class="availability-pill"><span></span> Available for opportunities</div>
+            </div>
+            <div class="contact-info-upper-container">
+                <a class="contact-info-container" href="mailto:ridzuanyahya1102@gmail.com">
+                    <img
+                        src="./assets/email.png"
+                        alt="Email icon"
+                        class="icon email-icon"
+                    />
+                    <span>
+                        <small>Email me</small>
+                        <strong>ridzuanyahya1102@gmail.com</strong>
+                    </span>
+                    <span class="contact-arrow">↗</span>
+                </a>
+                <a class="contact-info-container" href="https://www.linkedin.com/in/ridzuan-yahya/" target="_blank" rel="noreferrer">
+                    <img
+                        src="./assets/linkedin.png"
+                        alt="LinkedIn icon"
+                        class="icon contact-icon"
+                    />
+                    <span>
+                        <small>Connect on LinkedIn</small>
+                        <strong>Ridzuan Yahya</strong>
+                    </span>
+                    <span class="contact-arrow">↗</span>
+                </a>
+                <a class="contact-info-container" href="tel:+601110256458">
+                    <span class="contact-symbol">☎</span>
+                    <span>
+                        <small>Call me</small>
+                        <strong>+60 11-1025 6458</strong>
+                    </span>
+                    <span class="contact-arrow">↗</span>
+                </a>
+            </div>
+        </div>
+        <div class="contact-footer-note">
+            <span>Based in Selangor, Malaysia</span>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Ridzuan Yahya. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
