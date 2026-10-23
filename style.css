@@ -36,13 +36,48 @@ nav,
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 7vh;
+}
+
+#desktop-nav,
+#hamburger-nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid transparent;
+    transition: box-shadow 200ms ease, border-color 200ms ease;
+}
+
+#desktop-nav.scrolled,
+#hamburger-nav.scrolled {
+    border-color: #ededed;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .nav-links {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link.active {
+    color: #555;
+}
+
+.nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.55rem;
+    height: 2px;
+    background: #333;
 }
 
 a {
@@ -265,6 +300,7 @@ section {
 
 #about {
     position: relative;
+    padding-top: 7rem;
 }
 
 .about-containers {
@@ -319,6 +355,7 @@ section {
 #experience {
     position: relative;
     height: auto;
+    padding-top: 7rem;
     padding-bottom: 5rem;
 }
 
@@ -458,6 +495,7 @@ article .icon {
 
 #projects {
     position: relative;
+    padding-top: 7rem;
 }
 
 .color-container {
@@ -481,15 +519,86 @@ article .icon {
     border-color: rgb(163, 163, 163);
 }
 
+.project-content {
+    padding: 0 0.75rem;
+}
+
+.project-label {
+    display: block;
+    margin-top: 0.25rem;
+    color: #777;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.project-description {
+    margin: 0 auto 1rem;
+    max-width: 19rem;
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-bottom: 1.1rem;
+}
+
+.project-tags span {
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    background: #ededed;
+    color: #555;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.scroll-top {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    z-index: 15;
+    display: grid;
+    place-items: center;
+    width: 2.9rem;
+    height: 2.9rem;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background: #333;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.75rem);
+    transition: opacity 200ms ease, visibility 200ms ease, transform 200ms ease, background 200ms ease;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top:hover {
+    background: white;
+    color: #333;
+}
+
 /* Contact */
 
 #contact {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-height: 70vh;
-    height: auto;
-    padding-bottom: 5rem;
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .contact-layout {
@@ -497,9 +606,9 @@ article .icon {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
     gap: 3rem;
     align-items: center;
-    max-width: 950px;
+    max-width: 750px;
     width: 100%;
-    margin: 2rem auto 0;
+    margin: 1rem auto 0;
 }
 
 .contact-intro {
@@ -637,7 +746,7 @@ article .icon {
 /* Footer section */
 
 footer {
-    height: 22vh;
+    height: 12vh;
     margin: 0 1rem;
 }
 

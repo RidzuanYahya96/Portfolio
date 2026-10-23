@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
+    <nav id="desktop-nav" aria-label="Primary navigation">
         <div class="logo">Ridzuan Yahya</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="nav-link active" href="#about">About</a></li>
+                <li><a class="nav-link" href="#experience">Experience</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -102,12 +102,6 @@
                 </div>
             </div>
         </div>
-        <img 
-            src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow" 
-            onClick="location.href='./#experience'"
-        />
     </section>
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
@@ -336,12 +330,6 @@
                 </div>
             </article>
         </div>
-        <img 
-            src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow" 
-            onClick="location.href='./#projects'"
-        />
     </section>
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
@@ -356,7 +344,12 @@
                                 class="project-img"
                             />
                         </div>
-                        <h2 class="experience-sub-title project-title">Project One</h2>
+                        <div class="project-content">
+                            <span class="project-label">Web application</span>
+                            <h2 class="experience-sub-title project-title">Project One</h2>
+                            <p class="project-description">A focused digital experience built around clear navigation, responsive layouts, and a polished user journey.</p>
+                            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        </div>
                         <div class="btn-container">
                             <button
                                 class="btn btn-color-1 project-btn"
@@ -376,7 +369,12 @@
                                 class="project-img"
                             />
                         </div>
-                        <h2 class="experience-sub-title project-title">Project Two</h2>
+                        <div class="project-content">
+                            <span class="project-label">Mobile experience</span>
+                            <h2 class="experience-sub-title project-title">Project Two</h2>
+                            <p class="project-description">A practical mobile-first interface that turns everyday tasks into simple, accessible flows across devices.</p>
+                            <div class="project-tags"><span>React Native</span><span>REST API</span><span>UI/UX</span></div>
+                        </div>
                         <div class="btn-container">
                             <button
                                 class="btn btn-color-1 project-btn"
@@ -396,7 +394,12 @@
                                 class="project-img"
                             />
                         </div>
-                        <h2 class="experience-sub-title project-title">Project Three</h2>
+                        <div class="project-content">
+                            <span class="project-label">Data &amp; productivity</span>
+                            <h2 class="experience-sub-title project-title">Project Three</h2>
+                            <p class="project-description">A data-driven tool designed to organise information, surface useful insights, and support better decisions.</p>
+                            <div class="project-tags"><span>Node.js</span><span>PostgreSQL</span><span>Analytics</span></div>
+                        </div>
                         <div class="btn-container">
                             <button
                                 class="btn btn-color-1 project-btn"
@@ -410,12 +413,6 @@
                     </div>
                 </div>
             </div>
-            <img 
-                src="./assets/arrow.png" 
-                alt="Arrow icon" 
-                class="icon arrow" 
-                onClick="location.href='./#contact'"
-            />
     </section>
     <section id="contact">
         <p class="section__text__p1">Get In Touch</p>
@@ -479,6 +476,7 @@
         </nav>
         <p>Copyright &#169; 2026 Ridzuan Yahya. All Rights Reserved.</p>
     </footer>
+    <button class="scroll-top" id="scroll-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
     <script src="script.js"></script>
 </body>
 </html>
