@@ -56,6 +56,7 @@
     }
     #profile {
         height: 83vh;
+        margin-top: 5rem;
         margin-bottom: 0;
     }
     article {
@@ -63,7 +64,7 @@
     }
     footer nav {
         height: fit-content;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .about-containers,
     .contact-info-upper-container,
